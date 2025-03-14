@@ -1,4 +1,6 @@
 function transporMatriz(A){
+    console.log("Matriz\n")
+
     for(let i = 0; i < A.length; i++) {
         let linhaMatriz = "";
 
@@ -8,13 +10,13 @@ function transporMatriz(A){
         console.log(linhaMatriz);
     }
 
-    console.log("\t");
+    console.log("\nTransposta\n");
 
-    for(let i = 0; i < A[0].length; i++) {
+    for(let j = 0; j < A[0].length; j++) {
         let linhaMatriz = "";
 
-        for(let j = 0; j < A.length; j++) {
-            linhaMatriz += A[j][i] + "\t";
+        for(let i = 0; i < A.length; i++) {
+            linhaMatriz += A[i][j] + "\t";
         }
         console.log(linhaMatriz);
     }
